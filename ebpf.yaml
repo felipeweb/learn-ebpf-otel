@@ -52,7 +52,7 @@ kernelCollector:
   fetchKernelHeaders: false
 
   # uncomment to enable enrichment using Docker metadata
-  useDockerMetadata: true
+  # useDockerMetadata: true
 
   # uncomment to enable enrichment using Nomad metadata (https://www.nomadproject.io/)
   # collectNomadMetadata: true

@@ -1,6 +1,6 @@
 # Kubernetes Monitoring and Observability Setup
 
-This repository provides configuration files and instructions for setting up monitoring and observability tools on Kubernetes clusters. By following these steps, you'll be able to deploy essential components for monitoring your Kubernetes infrastructure and applications effectively.
+This repository provides configuration files and instructions for setting up monitoring and observability tools on Kubernetes clusters. By following these steps, you'll be able to deploy essential components for effectively monitoring your Kubernetes infrastructure and applications.
 
 ## Table of Contents
 
@@ -76,6 +76,11 @@ To install the monitoring and observability components, follow these steps:
     helm install opentelemetry-ebpf open-telemetry/opentelemetry-operator-ebpf --values ./ebpf.yaml
     ```
 
+10. Install demo application:
+    ```bash
+    helm upgrade -i my-release oci://ghcr.io/stefanprodan/charts/podinfo
+    ```
+
 ## Components
 
 This setup includes the following components:
@@ -90,10 +95,6 @@ This setup includes the following components:
 ## Usage
 
 Once the installation is complete, you can access Grafana to view dashboards and Prometheus for querying metrics. Additional configurations can be done as per your requirements to customize monitoring and observability for your Kubernetes environment.
-
-## Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests if you have any suggestions or improvements.
 
 ## License
 

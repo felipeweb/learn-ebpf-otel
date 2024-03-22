@@ -6,3 +6,5 @@ helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack
 helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm-charts
 helm repo update
 helm install opentelemetry-operator open-telemetry/opentelemetry-operator
+kubectl apply otel.yaml
+helm install opentelemetry-ebpf open-telemetry/opentelemetry-operator-ebpf --values ./ebpf.yaml

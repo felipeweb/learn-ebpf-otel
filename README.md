@@ -73,7 +73,7 @@ To install the monitoring and observability components, follow these steps:
 
 9. Install OpenTelemetry eBPF:
     ```bash
-    helm install opentelemetry-ebpf open-telemetry/opentelemetry-operator-ebpf --values ./ebpf.yaml
+    helm install opentelemetry-ebpf open-telemetry/opentelemetry-ebpf --values ./ebpf.yaml
     ```
 
 10. Install demo application:
